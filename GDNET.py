@@ -279,7 +279,7 @@ class Down(nn.Module):
         return self.conv(x)
 
 
-class GTDUNet(nn.Module):
+class GDNET(nn.Module):
     def __init__(self, dim, edge_index, dim_head=16, se_ratio_mlp=0.5, se_ratio_rb=0.5):
         super().__init__()
         ms_dim = 8
@@ -398,4 +398,5 @@ def summaries(model, grad=False):
         for name, param in model.named_parameters():
             if param.requires_grad:
                 print(name)
+
 
