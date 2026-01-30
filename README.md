@@ -1,1 +1,1 @@
-GTDUNet
+GDNET
